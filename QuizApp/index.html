@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Quiz Platform</h1>
+        <div id="create-quiz" class="mt-4">
+            <h2>Create a Quiz</h2>
+            <form id="quiz-form">
+                <div id="question-container">
+                    <div class="question-block mb-3 p-3 border rounded">
+                        <div class="form-group">
+                            <label for="question">Question:</label>
+                            <input type="text" class="form-control question-input" id="question" placeholder="Enter question">
+                        </div>
+                        <div class="form-group">
+                            <label for="optionA">Option A:</label>
+                            <input type="text" class="form-control option-input" id="optionA" placeholder="Enter option A">
+                        </div>
+                        <div class="form-group">
+                            <label for="optionB">Option B:</label>
+                            <input type="text" class="form-control option-input" id="optionB" placeholder="Enter option B">
+                        </div>
+                        <div class="form-group">
+                            <label for="optionC">Option C:</label>
+                            <input type="text" class="form-control option-input" id="optionC" placeholder="Enter option C">
+                        </div>
+                        <div class="form-group">
+                            <label for="optionD">Option D:</label>
+                            <input type="text" class="form-control option-input" id="optionD" placeholder="Enter option D">
+                        </div>
+                        <div class="form-group">
+                            <label for="correctOption">Correct Option:</label>
+                            <select class="form-control correct-option" id="correctOption">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="add-question" class="btn btn-secondary mb-3">Add Question</button>
+                <button type="submit" class="btn btn-primary">Create Quiz</button>
+            </form>
+        </div>
+
+        <div id="take-quiz" class="mt-4" style="display: none;">
+            <h2>Take the Quiz</h2>
+            <form id="quiz-take-form">
+                <div id="quiz-content"></div>
+                <button type="submit" class="btn btn-success mt-3">Submit Quiz</button>
+            </form>
+        </div>
+
+        <div id="results" class="mt-4" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p id="score" class="lead"></p>
+            <button id="retry" class="btn btn-warning">Retry Quiz</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

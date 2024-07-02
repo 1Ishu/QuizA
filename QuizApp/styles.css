@@ -1,0 +1,32 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #343a40;
+}
+
+.question-block {
+  background-color: #ffffff;
+}
+
+#quiz-take-form label {
+  display: block;
+}
+
+#quiz-take-form input[type="radio"] {
+  margin-right: 10px;
+}
+
+#product-specs th, #product-specs td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+}
+
+#product-specs th {
+  background-color: #e9ecef;
+}
