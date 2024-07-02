@@ -1,4 +1,5 @@
--> Create Quiz: 
+[Screenshot 2024-07-03 011556](https://github.com/1Ishu/QuizA/assets/140424051/a1eb763d-f514-4e63-9f99-1e4da7e45823) 
+
 
 -> Users can input questions, multiple-choice options, and select correct answers through a form interface.
 Save Quiz (LocalStorage):
